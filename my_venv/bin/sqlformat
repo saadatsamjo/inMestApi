@@ -1,4 +1,4 @@
-#!/Users/simbatec/Desktop/inMestApi/my_venv/bin/python3.11
+#!/Users/simbatec/Desktop/inMestApi/my_venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
