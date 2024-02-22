@@ -3,6 +3,8 @@ from django.http import JsonResponse, HttpResponse
 from django.views import View
 
 # Create your views here.
+def home_page(request):
+    return JsonResponse({"message":"this the homepage"})
 
 def json_response(request):
     return JsonResponse({"name": "Lucky"})
