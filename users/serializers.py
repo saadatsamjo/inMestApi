@@ -11,7 +11,7 @@ class UserSerializer(serializers.Serializer):
 
 class CohortSerializer(serializers.Serializer):
     name = serializers.CharField()
-    description = serializers.TextField()
+    description = serializers.CharField()
     year = serializers.IntegerField()
     start_date = serializers.DateField()
     end_date = serializers.DateField()
@@ -19,5 +19,5 @@ class CohortSerializer(serializers.Serializer):
 class CohortMemberSerializer(serializers.Serializer):
     cohort = CohortSerializer()
     member = UserSerializer()
-    is_active = serializers.BooleanField(default=True)
-    date_created = serializers.DateTimeField(auto_now_add=True)
+    is_active = serializers.BooleanField()
+    date_created = serializers.DateTimeField()
